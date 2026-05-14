@@ -6,7 +6,7 @@
 
  * Description: An easy-use Parcel Delivery plugin that fits all WordPress (WOOCommerce) websites.
 
- * Version: 1.1.1
+ * Version: 1.1.2
 
  * Author: Parcel
 
