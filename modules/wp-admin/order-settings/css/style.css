@@ -1,0 +1,130 @@
+.tooltip {
+
+  position: relative;
+
+  display: inline-block;
+
+}
+
+
+
+.tooltip .tooltiptext {
+
+  visibility: hidden;
+
+  width: 140px;
+
+  background-color: #555;
+
+  color: #fff;
+
+  text-align: center;
+
+  border-radius: 6px;
+
+  padding: 5px;
+
+  position: absolute;
+
+  z-index: 1;
+
+  bottom: 150%;
+
+  left: 50%;
+
+  margin-left: -75px;
+
+  opacity: 0;
+
+  transition: opacity 0.3s;
+
+}
+
+
+
+.tooltip .tooltiptext::after {
+
+  content: "";
+
+  position: absolute;
+
+  top: 100%;
+
+  left: 50%;
+
+  margin-left: -5px;
+
+  border-width: 5px;
+
+  border-style: solid;
+
+  border-color: #555 transparent transparent transparent;
+
+}
+
+
+
+.tooltip:hover .tooltiptext {
+
+  visibility: visible;
+
+  opacity: 1;
+
+}
+
+  
+
+.white-popup {
+
+  position: relative;
+
+  background: #FFF;
+
+  padding: 25px;
+
+  width: auto;
+
+  max-width: 500px;
+
+  margin: 20px auto;
+
+  text-align: center;
+
+}
+
+.popup-btn {
+
+  padding: 7px 20px;
+
+  margin: 0px 10px;
+
+  border: none;
+
+  text-decoration: none;
+
+}
+
+a.popup-btn.cancel_yes_btn,a.popup-btn.cancel_ok_btn{
+
+  background: #323846;
+
+  color: #ffff;
+
+}
+
+a.popup-btn.cancel_no_btn {
+
+  background: #e7e2e2;
+
+  color: #1a1818;
+
+}
+.ck-delivery-popup-btn button.button.button-primary {
+  height: 32px;
+  top: 10px;
+  left: 200px;
+  position: absolute;
+}
+.wc-backbone-modal-main article{
+  position: static!important;
+}

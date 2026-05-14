@@ -1,0 +1,732 @@
+.pd_shipcal_container {
+
+    background: white;
+
+    padding: 20px;
+
+}
+
+
+
+.pd_shipcal_container div.pd_parent {
+
+    margin: 20px auto;
+
+    width: 50%;
+
+    padding: 10px
+
+}
+
+
+
+.pd_shipcal_method,
+
+.pd_shipcal_block {
+
+    text-align: center;
+
+}
+
+
+
+.pd_shipcal_single_method {
+
+    float: left;
+
+    width: 50%
+
+}
+
+
+
+body select#pd_block {
+
+    width: 100%!important;
+
+}
+
+
+
+table.pd_shipcal_blocks_table {
+
+    width: 100%;
+
+    margin: 10px;
+
+    border-collapse: collapse;
+
+}
+
+
+
+table.pd_shipcal_blocks_table td,
+
+table.pd_shipcal_blocks_table th {
+
+    border: 1px solid #ddd;
+
+    padding: 8px;
+
+    text-align: center;
+
+	white-space: nowrap;
+
+}
+
+
+
+.pd_shipcal_blocks_table_container {
+
+    display: none;
+
+}
+
+
+
+.pd_hide {
+
+    display: none;
+
+}
+
+.pdInputDiv{
+
+    position: relative;
+
+    display: inline-block;
+
+}
+
+.pdInputDiv span.pdCurrency {
+
+	position: absolute;
+
+    display: block;
+
+    left: 8px;
+
+    top: 6px;
+
+    z-index: 9;
+
+}
+
+.pdInputDiv input.price{
+
+    display: block;
+
+    border: 1px solid #d7d6d6;
+
+    background: #fff;
+
+    padding: 0px 10px 0px 40px;
+
+    width: 110px;
+
+}
+
+.pdStatus {
+
+	display: inline-block;
+
+}
+
+.pd_shipcal_container hr{
+
+	margin: 50px 0px;
+
+}
+
+.pd_shipcal_blocks .dataTables_wrapper .dataTables_filter {
+
+    /* text-align: center;
+
+    margin: 25px auto;
+
+	float: none; */
+
+	float: none;
+
+    text-align: left;
+
+    margin: 15px;
+
+}
+
+.pd_shipcal_blocks .dataTables_wrapper .dataTables_filter input {
+
+    width: 50%;
+
+}
+
+/* pdSwitch Flat
+
+==========================*/
+
+
+
+.pdSwitch {
+
+	position: relative;
+
+	display: block;
+
+	vertical-align: top;
+
+	width: 100px;
+
+	height: 30px;
+
+	margin:0;
+
+	border-radius: 18px;
+
+	box-shadow: inset 0 -1px white, inset 0 1px 1px rgba(0, 0, 0, 0.05);
+
+	cursor: pointer;
+
+  box-sizing:content-box;
+
+}
+
+.pdSwitchInput {
+
+	position: absolute;
+
+	top: 0;
+
+	left: 0;
+
+	opacity: 0;
+
+  box-sizing:content-box;
+
+}
+
+.pdSwitchLabel {
+
+	position: relative;
+
+	display: block;
+
+	height: inherit;
+
+	font-size: 10px;
+
+	text-transform: uppercase;
+
+	border-radius: inherit;
+
+  box-sizing:content-box;
+
+}
+
+.pdSwitchLabel:before, .pdSwitchLabel:after {
+
+	position: absolute;
+
+	top: 50%;
+
+	margin-top: -.5em;
+
+	line-height: 1;
+
+	-webkit-transition: inherit;
+
+	-moz-transition: inherit;
+
+	-o-transition: inherit;
+
+	transition: inherit;
+
+  box-sizing:content-box;
+
+}
+
+.pdSwitchLabel:before {
+
+	content: attr(data-off);
+
+	right: 11px;
+
+	color: #aaaaaa;
+
+	text-shadow: 0 1px rgba(255, 255, 255, 0.5);
+
+}
+
+.pdSwitchLabel:after {
+
+	content: attr(data-on);
+
+	left: 11px;
+
+	text-shadow: 0 1px rgba(0, 0, 0, 0.2);
+
+	opacity: 0;
+
+}
+
+.pdSwitchInput:checked ~ .pdSwitchLabel {
+
+	background: #E1B42B;
+
+	box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15), inset 0 0 3px rgba(0, 0, 0, 0.2);
+
+}
+
+.pdSwitchInput:checked ~ .pdSwitchLabel:before {
+
+	opacity: 0;
+
+}
+
+.pdSwitchInput:checked ~ .pdSwitchLabel:after {
+
+	opacity: 1;
+
+}
+
+.pdSwitchHandle {
+
+	position: absolute;
+
+	border-radius: 100%;
+
+}
+
+.pdSwitchHandle:before {
+
+	content: "";
+
+	position: absolute;
+
+	top: 50%;
+
+	left: 50%;
+
+	margin: -6px 0 0 -6px;
+
+	width: 12px;
+
+	height: 12px;
+
+	border-radius: 6px;
+
+	box-shadow: inset 0 1px rgba(0, 0, 0, 0.02);
+
+}
+
+.pdSwitchInput:checked ~ .pdSwitchHandle {
+
+	left: 74px;
+
+	box-shadow: -1px 1px 5px rgba(0, 0, 0, 0.2);
+
+}
+
+
+
+body .pdSwitchFlat {
+
+	padding: 0;
+
+	background: #FFF;
+
+	background-image: none;
+
+}
+
+body .pdSwitchFlat .pdSwitchLabel {
+
+	background: #FFF;
+
+	border: solid 2px #eceeef;
+
+	box-shadow: none;
+
+}
+
+body .pdSwitchFlat .pdSwitchLabel:after {
+
+	color: #0088cc;
+
+}
+
+body .pdSwitchFlat .pdSwitchHandle {
+
+	top: 6px;
+
+	left: 6px;
+
+	background: #dadada;
+
+	width: 22px;
+
+	height: 22px;
+
+	box-shadow: none;
+
+}
+
+body .pdSwitchFlat .pdSwitchHandle:before {
+
+	background: #eceeef;
+
+}
+
+body .pdSwitchFlat .pdSwitchInput:checked ~ .pdSwitchLabel {
+
+	background: #FFF;
+
+	border-color: #0088cc;
+
+}
+
+body .pdSwitchFlat .pdSwitchInput:checked ~ .pdSwitchHandle {
+
+	left: 72px;
+
+	background: #0088cc;
+
+	box-shadow: none;
+
+}
+
+/* Transition
+
+============================================================ */
+
+.pdSwitchLabel, .pdSwitchHandle {
+
+	transition: All 0.3s ease;
+
+	-webkit-transition: All 0.3s ease;
+
+	
+
+}
+
+
+
+/* shipping calculator actions */
+
+.actionbtn {
+
+	background-color: #3498DB;
+
+	color: white;
+
+	padding: 10px;
+
+	font-size: 16px;
+
+	border: none;
+
+	cursor: pointer;
+
+}
+
+
+
+.actionbtn:hover {
+
+	background-color: #2980B9;
+
+}
+
+  
+
+.pd_shipcal_action {
+
+	content: "";
+
+	display: table;
+
+	clear: both;
+
+	float:right;
+
+	width: 50%;
+
+}
+
+
+
+.single_action{
+
+	float:right;
+
+	margin-left: 27px;
+
+}
+
+/* popup */
+
+.white-popup {
+
+	position: relative;
+
+	background: #FFF;
+
+	padding: 25px;
+
+	width: auto;
+
+	max-width: 500px;
+
+	margin: 20px auto;
+
+	text-align: center;
+
+}
+
+.popup-btn {
+
+	padding: 7px 20px;
+
+	margin: 0px 10px;
+
+	border: none;
+
+	text-decoration: none;
+
+}
+
+a.popup-btn.save_btn {
+
+	background: #323846;
+
+	color: #ffff;
+
+}
+
+a.popup-btn.cancel_btn {
+
+	background: #e7e2e2;
+
+	color: #1a1818;
+
+}
+
+.popup-input {
+
+	margin-bottom: 25px;
+
+}
+
+.pickup_location input{
+
+	width: 100%;
+
+}
+
+table.pd_shipcal_blocks_table.fixedHeader-floating {
+    left: 200px!important;
+    z-index: 9;
+}
+
+.delivery_vehicle select {
+    width: 100%;
+}
+/* Professional Shipping Calculator layout v2 */
+.pd_shipcal_container {
+    background: transparent;
+    border: 0;
+    padding: 0;
+    max-width: 1200px;
+}
+
+.pd_top_cards {
+    display: grid;
+    grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+    gap: 18px;
+    margin: 0 0 22px;
+}
+
+.pd_top_cards > .pd_parent {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 18px 20px !important;
+    background: #fff;
+    border: 1px solid #dcdcde;
+    border-radius: 10px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
+}
+
+.pd_top_cards .pickup_location,
+.pd_top_cards .delivery_vehicle {
+    background: transparent !important;
+    border: 0 !important;
+    padding: 0 !important;
+    max-width: none !important;
+}
+
+.pd_top_cards h4 {
+    margin: 0 0 14px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #f0f0f1;
+    font-size: 15px;
+    font-weight: 600;
+    color: #1d2327;
+    letter-spacing: 0.2px;
+}
+
+.pickup_location > div,
+.delivery_vehicle > div {
+    grid-template-columns: 150px minmax(0, 1fr);
+    gap: 12px;
+    margin: 8px 0;
+}
+
+.pickup_location label,
+.delivery_vehicle label {
+    color: #50575e;
+    font-size: 13px;
+}
+
+.pickup_location input,
+.pickup_location select,
+.delivery_vehicle select {
+    width: 100% !important;
+    max-width: none !important;
+    border: 1px solid #8c8f94;
+    border-radius: 4px;
+    background: #fff;
+    min-height: 32px;
+    padding: 4px 10px;
+}
+
+/* Method tabs */
+.pd_shipcal_method {
+    display: inline-flex;
+    gap: 0;
+    align-items: stretch;
+    text-align: left;
+    padding: 0 !important;
+    background: #fff;
+    border: 1px solid #dcdcde;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 0 0 16px !important;
+}
+
+.pd_shipcal_method .pd_shipcal_single_method {
+    position: relative;
+    padding: 0;
+}
+
+.pd_shipcal_method input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    cursor: pointer;
+}
+
+.pd_shipcal_method label {
+    display: inline-block;
+    padding: 10px 22px;
+    font-weight: 500;
+    color: #50575e;
+    background: #fff;
+    cursor: pointer;
+    border-right: 1px solid #dcdcde;
+}
+
+.pd_shipcal_single_method:last-child label {
+    border-right: 0;
+}
+
+.pd_shipcal_method input[type="radio"]:checked + label {
+    background: #2271b1;
+    color: #fff;
+}
+
+/* Blocks card */
+.pd_shipcal_method_wrap {
+    background: #fff;
+    border: 1px solid #dcdcde;
+    border-radius: 10px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
+    overflow: hidden;
+}
+
+.pd_shipcal_action {
+    padding: 14px 16px !important;
+    border-bottom: 1px solid #f0f0f1;
+    background: #fbfbfb;
+    margin: 0 !important;
+}
+
+.actionbtn {
+    background: #2271b1;
+    border: 1px solid #2271b1;
+    border-radius: 4px;
+    color: #fff;
+    padding: 6px 14px;
+    font-weight: 500;
+    min-height: 32px;
+}
+
+.actionbtn:hover,
+.actionbtn:focus {
+    background: #135e96;
+    border-color: #135e96;
+}
+
+.pd_shipcal_blocks {
+    margin: 0;
+    border: 0;
+    border-radius: 0;
+    max-height: 560px;
+    overflow: auto;
+}
+
+.pd_table_toolbar {
+    border-radius: 0;
+}
+
+table.pd_shipcal_blocks_table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+table.pd_shipcal_blocks_table thead th {
+    background: #f6f7f7;
+    text-transform: uppercase;
+    font-size: 11px;
+    letter-spacing: 0.6px;
+    color: #50575e;
+    border-bottom: 1px solid #c3c4c7 !important;
+    padding: 10px 12px;
+}
+
+table.pd_shipcal_blocks_table tbody td {
+    padding: 10px 12px;
+    border-bottom: 1px solid #f0f0f1;
+}
+
+table.pd_shipcal_blocks_table tbody tr:hover {
+    background: #f6fbff;
+}
+
+.pd_shipcal_header h2 {
+    font-size: 22px;
+    margin: 0 0 6px;
+}
+
+.pd_shipcal_header p {
+    margin: 0 0 18px;
+    color: #50575e;
+}
+
+@media (max-width: 1000px) {
+    .pd_top_cards {
+        grid-template-columns: 1fr;
+    }
+}
